@@ -1,0 +1,35 @@
+PROJECT_NAME="Cert_poc"
+
+# Postgres
+POSTGRES_HOST='localhost'
+POSTGRES_PORT='5432'
+POSTGRES_USER='user'
+POSTGRES_PASSWORD='user123'
+POSTGRES_DB='cert_demo'
+POSTGRES_SERVER='localhost'
+
+BACKEND_HOST=http://localhost:5173
+FRONTEND_HOST=http://localhost:5173
+# Backend
+BACKEND_CORS_ORIGINS="http://localhost,http://localhost:5173,https://localhost,https://localhost:5173"
+
+
+# Scret Key
+SECRET_KEY=
+FIRST_SUPERUSER=admin@example.com
+FIRST_SUPERUSER_PASSWORD=admin
+
+# Emails
+EMAIL_API_KEY=
+SMTP_HOST=
+SMTP_USER=
+SMTP_PASSWORD=
+EMAILS_FROM_EMAIL=
+SMTP_TLS=True
+SMTP_SSL=False
+SMTP_PORT=587
+
+# Environment: local, staging, production
+ENVIRONMENT=local
+
+
