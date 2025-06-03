@@ -1,0 +1,40 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f0f4f8;
+}
+
+.register-box {
+  background: #fefce8; /* 淡灰藍半透明 */
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 440px;
+}
+
+.register-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+select {
+  height: auto;      /* 讓高度可以調整 */
+  max-height: 5 0px; /* 限制最大高度 */
+  overflow-y: auto;  /* 超出則滾動 */
+}
+
+.register-error {
+  color: red;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}

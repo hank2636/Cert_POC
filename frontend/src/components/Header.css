@@ -1,0 +1,114 @@
+/* Header.css */
+
+.custom-header {
+  background-color: #f0f4f8; /* 自訂你想要的底色 */
+}
+
+.logout-button {
+  color: white;
+  background-color: #000000;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 15px;
+  border: none;
+}
+
+.logout-button:hover {
+  background-color: #ffdf2b;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.logout-button:focus {
+  outline: none;
+}
+
+
+.user-center {
+  position: relative;
+  display: inline-block;
+}
+
+.user-logo {
+  width: 35px;
+  height: auto;
+}
+
+/* 提示文字樣式 */
+.user-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -30px; /* 可以調整位置 */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+/* 懸浮時顯示 tooltip */
+.user-center:hover .user-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.login-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.login-button {
+  background-color: #ffdf2b;
+  color: black;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e6ca1f;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%; /* 讓選單緊貼按鈕下方 */
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-width: 140px;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.login-dropdown:hover .dropdown-menu {
+  display: flex;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: rgb(0, 0, 0);
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: #ffdf2b;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+}

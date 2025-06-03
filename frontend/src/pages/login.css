@@ -1,0 +1,144 @@
+/*避免自動填入「破壞」樣式*/
+.input-field:-webkit-autofill {
+  background-color: white !important;
+  color: black !important;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: black !important;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f0f4f8;
+}
+
+.login-box {
+  background: #fefce8; /* 淡灰藍半透明 */
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 440px;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #334155; /* 深灰藍色 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  color:rgba(0, 0, 0, 0.8);
+  /* overflow: hidden; */
+}
+
+.input-label {
+  min-width: 50px;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.input-field {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+  white-space: nowrap;       /* 不換行 */
+  overflow: hidden;          /* 超出部分隱藏 */
+  text-overflow: ellipsis;   /* 多的部分用 ... 表示 */
+}
+
+.btn-primary,
+.btn-secondary {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #ffdf2b;
+  color: rgb(0, 0, 0);
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember-label {
+  margin-top: 1.25rem; 
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #374151; /* gray-700 */
+}
+
+.remember-checkbox {
+  margin-right: 0.5rem;
+}
+
+.forgot-password-btn {
+  margin-top: 1.25rem; 
+  font-size: 0.875rem;
+  color: #2563eb; /* blue-600 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgot-password-btn:hover {
+  color: #329fd5; /* hover: blue-700 */
+}
+
+.login-error {
+  margin-top: 1rem;
+  color: #dc2626; /* red-600 */
+  font-size: 0.875rem;
+  text-align: center;
+  background-color: #fee2e2; /* red-100 */
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fecaca; /* red-200 */
+  width: 100%;
+}
+
+
+

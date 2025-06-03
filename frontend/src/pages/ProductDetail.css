@@ -1,0 +1,16 @@
+/* ProductDetail.css */
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af; /* Tailwind blue-700 */
+}
+
+img {
+  border-radius: 0.375rem; /* Tailwind rounded-md */
+  border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  object-fit: cover;
+  max-height: 24rem; /* 96 */
+}

@@ -1,0 +1,14 @@
+.verification-box {
+  border: 1px solid #facc15; /* 黃色邊框 */
+  background-color: #fefce8; /* 背景色 */
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.verification-text {
+  color: #000000; /* 黑色文字 */
+  font-size: 1rem;
+  line-height: 1.5;
+}

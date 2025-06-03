@@ -1,0 +1,75 @@
+.city-selector {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.city-selector-button {
+  width: 100%;
+  padding: 0.25rem 1.75rem 0.25rem 0.5rem; /* ⬅️ 原本是 0.5rem，改成 0.25rem 更扁 */
+  text-align: left;
+  border: none;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  font-size: 0.95rem;
+  height: auto;
+  line-height: 1.2;
+}
+
+/* 模擬下拉箭頭 */
+.city-selector-button::after {
+  content: "▼";
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #666;
+  pointer-events: none;
+}
+
+.city-selector-dropdown {
+  position: absolute;
+  z-index: 9999;
+  top: calc(100% + 4px);
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  min-width: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  border-radius: 4px;
+}
+
+.city-option {
+  padding: 6px;
+  border: none;
+  background: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.city-option:hover,
+.city-option.selected {
+  background-color: #ffdf2b;
+  color: rgb(0, 0, 0);
+}
+
+.city-selector-button.disabled {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+  pointer-events: none; /* 防止點擊 */
+}
+
+

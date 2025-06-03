@@ -1,0 +1,94 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project_name }} - Welcome</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: 'Ubuntu', Arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 40px 20px;
+        border-radius: 8px;
+      }
+      .header {
+        font-size: 22px;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .subheader {
+        font-size: 16px;
+        color: #555;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .content {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .button {
+        background-color: #fced4d;
+        color: #ffffff;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        display: inline-block;
+        font-size: 18px;
+        margin: 20px auto;
+      }
+      .button:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      .fallback {
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        margin-top: 20px;
+        word-break: break-all;
+      }
+      .divider {
+        border-top: 1px solid #dddddd;
+        margin: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">{{ project_name }} - Welcome!</div>
+      <div class="subheader">您的帳號已建立，請確認以下資訊並啟用您的帳號。</div>
+
+      <div class="content">👤 使用者名稱：<strong>{{ username }}</strong></div>
+      <div class="content">🔑 使用者密碼：<strong>{{ password }}</strong></div>
+
+      <div style="text-align: center;">
+        <a href="{{ link }}" target="_blank" class="button">啟用帳號</a>
+      </div>
+
+      <div class="fallback">
+        若無法點擊按鈕，請將下列連結複製並貼至瀏覽器：<br>
+        <span>{{ link }}</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="content">感謝您加入 {{ project_name }}！</div>
+    </div>
+  </body>
+</html>
